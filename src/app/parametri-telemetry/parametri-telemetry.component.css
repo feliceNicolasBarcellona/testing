@@ -1,0 +1,22 @@
+.card {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature,
+.percentage,
+.voltage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+}

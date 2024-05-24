@@ -11,6 +11,7 @@ import { RpcService } from '../api/rpc.service';
 export class CardComponent {
   @Input() serviceType: 'login' | 'usn' | 'rpc';
   @Input() methods: Array<{ name: string; params: any; alias: string }>;
+  
 
   constructor(
     private loginService: LoginService,

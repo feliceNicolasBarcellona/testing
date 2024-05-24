@@ -6,14 +6,14 @@ import { RpcService } from './api/rpc.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-// import { LoginCardComponent } from './login-card/login-card.component';
 import { CardComponent } from './card/card.component';
+import { ParametriTelemetryComponent } from './parametri-telemetry/parametri-telemetry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // LoginCardComponent,
-    CardComponent
+    CardComponent,
+    ParametriTelemetryComponent
   ],
   imports: [
     BrowserModule,
