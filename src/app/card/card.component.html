@@ -1,0 +1,6 @@
+<div class="card">
+    <button *ngFor="let method of methods" (click)="handleMethodCall(method.name, method.params)">
+        {{ method.alias }}
+    </button>
+  </div>
+  
