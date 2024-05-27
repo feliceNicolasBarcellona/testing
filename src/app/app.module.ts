@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './card/card.component';
 import { ParametriTelemetryComponent } from './parametri-telemetry/parametri-telemetry.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ParametriTelemetryComponent
+    ParametriTelemetryComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

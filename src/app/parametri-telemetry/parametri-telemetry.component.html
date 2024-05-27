@@ -1,11 +1,5 @@
-<!-- <div class="card" ngSwitch="">
-<div class="temperature" *ngSwitchCase="temperature"></div>
-<div class="percentage" *ngSwitchCase="percentage"></div>
-<div class="voltage" *ngSwitchCase="voltage"></div>
-</div> -->
-
 <div class="card">
-  <div class="temperature">
+  <div *ngIf="type === 'temperature'" class="temperature">
     <h4>temperatura</h4>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +24,7 @@
       />
     </svg>
   </div>
-  <div class="percentage">
+  <div *ngIf="type === 'percentage'" class="percentage">
     <h4>percentuale</h4>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +49,7 @@
       />
     </svg>
   </div>
-  <div class="voltage">
+  <div *ngIf="type === 'voltage'" class="voltage">
     <h4>voltaggio</h4>
     <svg
       xmlns="http://www.w3.org/2000/svg"

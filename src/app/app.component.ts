@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dr-rise-demo';
+  tabs: string[] = ['Tab 1', 'Tab 2', 'Tab 3'];
 }

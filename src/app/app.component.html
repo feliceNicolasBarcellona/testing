@@ -56,6 +56,32 @@
   ]"
 ></app-card>
 
-<app-parametri-telemetry></app-parametri-telemetry>
+<app-tabs [tabs]="tabs" class="custom-class">
+  <ng-template #tab1>
+    <app-parametri-telemetry type="temperature"></app-parametri-telemetry>
 
+  </ng-template>
+  <ng-template #tab2>
+    <app-parametri-telemetry type="percentage"></app-parametri-telemetry>
+  </ng-template>
+  <ng-template #tab3>
+    <app-parametri-telemetry type="voltage"></app-parametri-telemetry>
+  </ng-template>
+
+  <ng-container *ngIf="false" [ngTemplateOutlet]="tab1" [attr.slot]="tabs[0]"></ng-container>
+  <ng-container *ngIf="false" [ngTemplateOutlet]="tab2" [attr.slot]="tabs[1]"></ng-container>
+  <ng-container *ngIf="false" [ngTemplateOutlet]="tab3" [attr.slot]="tabs[2]"></ng-container>
+
+  <ng-container *ngIf="false">
+    <div slot="Temperatura">
+      <app-parametri-telemetry type="temperature"></app-parametri-telemetry>
+    </div>
+    <div slot="Percentuale">
+      <app-parametri-telemetry type="percentage"></app-parametri-telemetry>
+    </div>
+    <div slot="Voltaggio">
+      <app-parametri-telemetry type="voltage"></app-parametri-telemetry>
+    </div>
+  </ng-container>
+</app-tabs>
 <router-outlet></router-outlet>
